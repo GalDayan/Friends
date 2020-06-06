@@ -3,7 +3,7 @@
 char* CapitalsLowers(char *s1)
 {
 	int i, j, n = 0;
-	char *s2 = NULL;
+	char *s2 = '\0';
 	for (i = 0; *(s1 + i) != '\0'; i++)
 		if (*(s1 + i) >= 'A' && *(s1 + i) <= 'Z')
 		{
@@ -28,7 +28,7 @@ void main()
 {
 	char *s1[20], *s2;
 	puts("insert sentence");
-	//getchar(); // Why do you use it?
+	getchar(); // Why do you use it?
 	gets(s1);
 	s2 = CapitalsLowers(s1);
 	PrintString(s2);
