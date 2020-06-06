@@ -28,7 +28,7 @@ void main()
 {
 	char *s1[20], *s2;
 	puts("insert sentence");
-	getchar();
+	//getchar(); // Why do you use it?
 	gets(s1);
 	s2 = CapitalsLowers(s1);
 	PrintString(s2);
